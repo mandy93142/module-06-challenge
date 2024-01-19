@@ -1,9 +1,9 @@
 # module-06-challenge
 
-Link to website:
+Link to website: https://mandy93142.github.io/module-06-challenge/
 
 Server-Side APIs Challenge: Weather Dashboard
-
+d
 ## Overview
 Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. The challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
@@ -27,3 +27,5 @@ Third-party APIs allow developers to access their data and functionality by maki
 ## License
 
 This project is under the [MIT License](LICENSE).
+
+![Weather Dashboard](./assets/Screen%20Shot%202024-01-18%20at%208.03.18%20PM.png)
