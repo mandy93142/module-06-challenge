@@ -4,10 +4,11 @@ const cityInputEl = document.getElementById('city-input');
 const searchButtonEl = document.getElementById('search-button');
 const currentWeatherEl = document.getElementById('current-weather');
 const forecastContainerEl = document.getElementById('forecast-container');
-const cities = ['Atlanta', 'Denver', 'Seattle', 'San Francisco', 'Orlando', 'New York', 'Chicago', 'Austin'];
+const cities = JSON.parse(localStorage.getItem('searchHistory')) || [];
 
 // Initialize the dashboard with the predefined cities
 function initDashboard() {
+    cityListEl.innerHTML = "";
     cities.forEach(city => {
         const cityButton = document.createElement('button');
         cityButton.textContent = city;
@@ -26,6 +27,12 @@ function fetchWeatherData(city) {
         if (response.ok) {
             response.json().then(data => {
                 const { lat, lon } = data.coord;
+                // localStorage to store the search history 
+                if (!cities.includes(data.name)){
+                    cities.push(data.name);
+                    localStorage.setItem('searchHistory', JSON.stringify(cities));
+                    initDashboard();
+                };
                 fetchForecast(lat, lon, city);
             });
         } else {

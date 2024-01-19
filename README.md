@@ -4,25 +4,26 @@ Link to website:
 
 Server-Side APIs Challenge: Weather Dashboard
 
-Server-Side APIs Challenge: Weather Dashboard
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+## Overview
+Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. The challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
-Acceptance Criteria:
+## Features
 
-GIVEN a weather dashboard with form inputs
+- **Search Bar:** Search for a city and the 5 day weather forecast of the city will show.
+- **Search History:** The city that the user searched before will appear on the page for future use. 
 
-WHEN I search for a city
+## Technologies
 
-THEN I am presented with current and future conditions for that city and that city is added to the search history
+- **HTML, CSS, JS:** Basic web technologies.
+- **OpenWeather API:** Retrieve weather data for cities.
+- **localStorage:** Save the user's previous searches and store it in localStorage.
 
-WHEN I view current weather conditions for that city
+## Project Files
 
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature,the humidity, and the wind speed
+- **index.html:** Web page structure.
+- **style.css:** Styling.
+- **script.js:** Content and API requests.
 
-WHEN I view future weather conditions for that city
+## License
 
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-
-WHEN I click on a city in the search history
-
-THEN I am again presented with current and future conditions for that city
+This project is under the [MIT License](LICENSE).
